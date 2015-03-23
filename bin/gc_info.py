@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
 import sys
+import os
 import os.path
 import seq_stats
 import Bio.SeqIO
 
+
+os.environ['PYTHONPATH'] = os.path.join(os.getcwd(), 'lib')
 if len(sys.argv) != 2:
   exit("Usage: {} <FASTA file>".format(os.path.basename(sys.argv[0])))
 

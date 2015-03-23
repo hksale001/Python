@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 def gc_content(dna_str):
   bases = 'GATC'
   counts = dict()
